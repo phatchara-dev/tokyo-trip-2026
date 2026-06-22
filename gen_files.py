@@ -1,6 +1,6 @@
 import os
 
-# ข้อมูลแผนการเดินทาง 9 วัน ตัดเรื่องอาหารและส่องรถไฟซ้ำซาก เน้นที่เที่ยว + Mega Sento
+# ข้อมูลแผนการเดินทาง 9 วัน เวอร์ชันใส่ คามากุระ + รถไฟห้อยหัว + เที่ยวแน่นสลับ Mega Sento
 trip_data = {
     1: {
         "date_th": "วันอังคารที่ 28 กรกฎาคม 2026", "date_en": "Tuesday, July 28, 2026", "date_ja": "2026年7月28日(火)",
@@ -15,14 +15,14 @@ trip_data = {
     },
     2: {
         "date_th": "วันพุธที่ 29 กรกฎาคม 2026", "date_en": "Wednesday, July 29, 2026", "date_ja": "2026年7月29日(水)",
-        "title_th": "พักผ่อนตามอัธยาศัยย่านชินจูกุ & ลุยเมกะเซ็นโตอันดับหนึ่ง Spadium Japon 🚇",
-        "title_en": "Free Time in Shinjuku & Spadium Japon Mega Sento 🚇",
-        "title_ja": "新宿での自由行動＆東京最大級メガ銭湯スパジアムジャポン 🚇",
+        "title_th": "จัดทริปยาวลุยเมืองเก่า Kamakura & นั่งขบวนคลาสสิก Enoden เลียบทะเล 🌊",
+        "title_en": "Day Trip to Historic Kamakura & Scenic Enoden Coastal Train Ride 🌊",
+        "title_ja": "古都鎌倉日帰り観光＆江ノ電ローカル線の海沿い車窓旅 🌊",
         "sento_th": "Mega Sento 2: Spadium Japon (スパジアムジャポン)", "sento_en": "Mega Sento 2: Spadium Japon", "sento_ja": "メガ銭湯 2：スパジアムジャポン",
         "sento_detail_th": "เดินทางด้วยรถไฟและต่อรถบัสท้องถิ่นลู่ตรงสู่เมกะเซ็นโตอันดับหนึ่งที่ใหญ่ที่สุดในโตเกียว บ่อแช่น้ำอลังการกว่า 15 รูปแบบ ทั้งบ่อกลางแจ้งและบ่อไฟฟ้า บรรยากาศคึกคักสูงสุด",
         "sento_detail_en": "Take a local train and free shuttle bus to Tokyo's largest mega sento complex, featuring over 15 dynamic hot spring pools with a lively local crowd.",
         "sento_detail_ja": "一般列車とシャトルバスを乗り継ぎ、東京最大級のメガ銭湯施設へ。15種類もの多彩な大浴場を誇り、非常に活気ある雰囲気。",
-        "sento_cost": "¥850", "transit_cost": "ฟรี", "return_cost": "¥180", "total_cost": "¥1,030"
+        "sento_cost": "¥850", "transit_cost": "ตามจริง", "return_cost": "¥180", "total_cost": "¥1,030"
     },
     3: {
         "date_th": "วันพฤหัสบดีที่ 30 กรกฎาคม 2026", "date_en": "Thursday, July 30, 2026", "date_ja": "2026年7月30日(木)",
@@ -48,14 +48,14 @@ trip_data = {
     },
     5: {
         "date_th": "วันเสาร์ที่ 1 สิงหาคม 2026", "date_en": "Saturday, August 1, 2026", "date_ja": "2026年8月1日(土)",
-        "title_th": "พักผ่อนตามอัธยาศัยในวันหยุด & แช่น้ำแร่สะใจที่เมกะเซ็นโต Ryusenji no Yu 🚄",
-        "title_en": "Weekend Free Lounge & Ryusenji no Yu Gigantic Mega Sento 🚄",
-        "title_ja": "週末の自由行動＆郊外型メガスーパー銭湯竜泉寺の湯 🚄",
+        "title_th": "เปิดประสบการณ์นั่ง 'รถไฟห้อยหัว' Chiba Monorail & แช่บ่อคาร์บอเนต Ryusenji 🚄",
+        "title_en": "Ride the Chiba Urban Hanging Monorail & Ryusenji no Yu Mega Sento 🚄",
+        "title_ja": "千葉モノレール懸垂型車両体験＆郊外型メガスーパー銭湯竜泉寺の湯 🚄",
         "sento_th": "Mega Sento 5: Ryusenji no Yu (竜泉寺の湯)", "sento_en": "Mega Sento 5: Ryusenji no Yu", "sento_ja": "メガ銭湯 5：竜泉寺の湯",
         "sento_detail_th": "เดินทางสู่เมกะเซ็นโตขนาดยักษ์ชื่อดัง เพลิดเพลินกับโซนน้ำแร่ธรรมชาติและบ่อคาร์บอเนตความเข้มข้นสูงยักษ์ บ่อเพียบ คนหนาแน่นคึกคักสะใจสายเซ็นโต",
         "sento_detail_en": "Unwind at a legendary mega sento complex famous for its enormous outdoor bath areas and highly dense carbonated spring grids packed with locals.",
         "sento_detail_ja": "有名メガ銭湯施設へ。広大な大露天風呂や、毎週末大変賑わう名物の高濃度炭酸泉大浴場を満喫。",
-        "sento_cost": "¥950", "transit_cost": "ฟรี", "return_cost": "ตามจริง", "total_cost": "¥950"
+        "sento_cost": "¥950", "transit_cost": "ตามจริง", "return_cost": "ตามจริง", "total_cost": "¥950"
     },
     6: {
         "date_th": "วันอาทิตย์ที่ 2 สิงหาคม 2026", "date_en": "Sunday, August 2, 2026", "date_ja": "2026年8月2日(日)",
@@ -107,6 +107,16 @@ def generate_html(day, lang):
                 <tr><td>09:30 - 11:30</td><td>🚃 นั่งรถไฟธรรมดาสายประหยัดเข้าสู่ Shinjuku</td><td>นั่งรถไฟสาย Keisei Main Line (ขบวนธรรมดา) ไปเปลี่ยนสาย JR Yamanote Line ที่สถานี Nippori ลู่ตรงเข้าสู่ Shinjuku เพื่อฝากกระเป๋าเดินทางที่ Hostel Capsule Kuyakushomae Shinjuku</td><td>{d['transit_cost']}</td></tr>
                 <tr><td>11:30 - 17:00</td><td>🏙️ พักผ่อนเดินเล่นย่าน Shinjuku</td><td>เดินรับบรรยากาศเมืองโตเกียว ส่องตึก ศาลเจ้า และย่านมีชื่อเสียงรอบที่พักชินจูกุ</td><td>{free_txt}</td></tr>
             """
+        elif day == 2:
+            rows = f"""
+                <tr><td>08:00 - 12:30</td><td>⛩️ เดินชิลเมืองเก่าศาลเจ้าคามากุระ & พระใหญ่</td><td>นั่งรถไฟขบวนธรรมดาสาย JR Shonan-Shinjuku มุ่งตรงสู่ Kamakura เดินชมเมืองเก่า ศาลเจ้า Tsurugaoka Hachimangu และไหว้พระใหญ่ Daibutsu</td><td>ตามจริง</td></tr>
+                <tr><td>12:30 - 16:00</td><td>🌊 นั่งรถไฟสายคลาสสิก Enoden เลียบชายหาด</td><td>สัมผัสความโรแมนติกรับลมทะเลบนขบวนรถไฟประวัติศาสตร์ Enoden ผ่านจุดตัดรถไฟเลียบทะเลชื่อดังและสถานี Kamakura-Koko-Mae</td><td>ตามจริง</td></tr>
+            """
+        elif day == 5:
+            rows = f"""
+                <tr><td>10:00 - 13:00</td><td>🚟 สัมผัสความเสียว 'รถไฟห้อยหัว' Chiba Monorail</td><td>เดินทางเข้าสู่จังหวัดชิบะ เพื่อทดลองนั่งรถไฟรางเดี่ยวแขวนย้อยกลับหัว (Suspended Monorail) ที่ยาวที่สุดในโลก ศึกษาโครงสร้างวิศวกรรมรางสลับซับซ้อน</td><td>ตามจริง</td></tr>
+                <tr><td>13:00 - 16:00</td><td>🏙️ เดินเล่นชมวิวย่านเมืองชิบะ</td><td>รับบรรยากาศผ่อนคลายสบาย ๆ เดินถ่ายรูปสตรีทวิวสถาปัตยกรรมรอบตัวเมืองชิบะก่อนเดินทางกลับ</td><td>{free_txt}</td></tr>
+            """
         elif day == 6:
             rows = f"""
                 <tr><td>10:00 - 13:00</td><td>🌳 ชมป่าใจกลางเมือง ศาลเจ้าเมจิ (Meiji Jingu)</td><td>นั่งรถไฟสายประหยัดสั้น ๆ ไปยัง Harajuku เดินเข้าชมความเงียบสงบของพื้นที่ป่าขนาดยักษ์และศาลเจ้าเมจิอันศักดิ์สิทธิ์</td><td>{free_txt}</td></tr>
@@ -138,6 +148,16 @@ def generate_html(day, lang):
                 <tr><td>07:35 - 09:30</td><td>🛬 Narita Landing & Customs</td><td>Touch down at Narita Airport, clear immigration procedures, and collect luggage.</td><td>{free_txt}</td></tr>
                 <tr><td>09:30 - 11:30</td><td>🚃 Budget Local Train Commute to Shinjuku</td><td>Take the Keisei Main Line (Local), transfer to the JR Yamanote Line at Nippori Station, and head directly to Shinjuku. Drop off bags at Hostel Capsule Kuyakushomae Shinjuku.</td><td>{d['transit_cost']}</td></tr>
                 <tr><td>11:30 - 17:00</td><td>🏙️ Relaxed Stroll around Shinjuku</td><td>Explore the streets and shrines near the Shinjuku accommodation at an easy pace.</td><td>{free_txt}</td></tr>
+            """
+        elif day == 2:
+            rows = f"""
+                <tr><td>08:00 - 12:30</td><td>⛩️ Kamakura Historic Town & Great Buddha</td><td>Take the JR Shonan-Shinjuku Line to Kamakura. Walk the ancient streets, visit Tsurugaoka Hachimangu Shrine and Kotoku-in Temple (Great Buddha).</td><td>Actual cost</td></tr>
+                <tr><td>12:30 - 16:00</td><td>🌊 Enoden Coastal Train Experience</td><td>Ride the classic vintage Enoden line hugging the beautiful Shonan coastline, passing the famous railway crossing near Kamakura-Koko-Mae.</td><td>Actual cost</td></tr>
+            """
+        elif day == 5:
+            rows = f"""
+                <tr><td>10:00 - 13:00</td><td>🚟 Ride the Chiba Hanging Monorail</td><td>Head to Chiba and board the world's longest suspended inverted monorail track layout. Observe its complex grid engineering.</td><td>Actual cost</td></tr>
+                <tr><td>13:00 - 16:00</td><td>🏙️ Easy Walk around Chiba Downtown</td><td>Take a quiet street stroll around Chiba City grid avenues before traveling back.</td><td>{free_txt}</td></tr>
             """
         elif day == 6:
             rows = f"""
@@ -171,6 +191,16 @@ def generate_html(day, lang):
                 <tr><td>09:30 - 11:30</td><td>🚃 格安一般列車での新宿移動</td><td>京成本線（一般）に乗り、日暮里駅でJR山手線に乗り換えて新宿へ直行。「ホステルカプセル区役所前新宿」に荷物を預ける。</td><td>{d['transit_cost']}</td></tr>
                 <tr><td>11:30 - 17:00</td><td>🏙️ 新宿エリアののんびり散策</td><td>新宿駅周辺や有名な神社、高層ビル街の周辺を各自のペースで自由に街歩き。</td><td>{free_txt}</td></tr>
             """
+        elif day == 2:
+            rows = f"""
+                <tr><td>08:00 - 12:30</td><td>⛩️ 古都鎌倉散策＆高徳院の鎌倉大仏</td><td>JR湘南新宿ライン一般列車で鎌倉へ。鶴岡八幡宮参道や歴史ある街並みを歩き、大仏を見学。</td><td>実費</td></tr>
+                <tr><td>12:30 - 16:00</td><td>🌊 江ノ島電鉄ローカル線の海沿い車窓</td><td>レトロな江ノ電車両に揺られ、鎌倉高校前駅付近など美しい湘南の海原を望む車窓を満喫。</td><td>実費</td></tr>
+            """
+        elif day == 5:
+            rows = f"""
+                <tr><td>10:00 - 13:00</td><td>🚟 千葉都市モノレール懸垂型車両体験</td><td>千葉へ移動し、世界最長の懸垂式モノレール路線に乗車。独特の軌道構造と空中移動を体感。</td><td>実費</td></tr>
+                <tr><td>13:00 - 16:00</td><td>🏙️ 千葉市街ののんびり街歩き</td><td>千葉駅周辺の穏やかな街並みを各自のペースでのんびりお散歩。</td><td>{free_txt}</td></tr>
+            """
         elif day == 6:
             rows = f"""
                 <tr><td>10:00 - 13:00</td><td>🌳 明治神宮の広大な杜の散策</td><td>格安列車で原宿へ。都会の中心に広がる広大な明治神宮の深い杜の参道をのんびり歩く。</td><td>{free_txt}</td></tr>
@@ -196,8 +226,9 @@ def generate_html(day, lang):
     btn_next = f'<a href="day{day+1}-{lang}.html" class="btn btn-next">{next_lbl} {day+1} →</a>' if day < 9 else ''
     if day == 8: btn_next = f'<a href="day9-{lang}.html" class="btn btn-next">{next_lbl} 9 →</a>'
 
-    date_str = d[f'date_{lang}']
-    title_str = d[f'title_{lang}']
+    lang_code = lang if lang != "ja" else "ja"
+    date_str = d[f'date_{lang_code}']
+    title_str = d[f'title_{lang_code}']
 
     html_content = f"""<!DOCTYPE html>
 <html lang="{lang}">
@@ -212,7 +243,7 @@ def generate_html(day, lang):
     <div class="lang-switcher">
         <a href="day{day}-th.html" {'style="background: #d4af37; color: #252a36 !important;"' if lang=='th' else ''}>TH</a> | 
         <a href="day{day}-en.html" {'style="background: #d4af37; color: #252a36 !important;"' if lang=='en' else ''}>EN</a> | 
-        <a href="day{day}-ja.html" {'style="background: #d4af37; color: #252a36 !important;"' if lang=='ja' else ''}>JP</a>
+        <a href="day{day}-jp.html" {'style="background: #d4af37; color: #252a36 !important;"' if lang=='ja' else ''}>JP</a>
     </div>
     <div class="header">{header_title}</div>
     <div class="day-section">
@@ -249,7 +280,7 @@ def generate_day9(lang):
 </head>
 <body>
 <div class="container">
-    <div class="lang-switcher"><a href="day9-th.html" style="background: #d4af37; color: #252a36 !important;">TH</a> | <a href="day9-en.html">EN</a> | <a href="day9-ja.html">JP</a></div>
+    <div class="lang-switcher"><a href="day9-th.html" style="background: #d4af37; color: #252a36 !important;">TH</a> | <a href="day9-en.html">EN</a> | <a href="day9-jp.html">JP</a></div>
     <div class="header">🚇 Tokyo Unseen & Mega Sento Speed Trip 2026 🏮</div>
     <div class="day-section">
         <div class="day-title">🗓️ Day 9: วันพุธที่ 5 สิงหาคม 2026 | เดินทางจากที่พักนาริตะ เข้าสนามบิน บอร์ดดิ้งกลับบ้านโดยสวัสดิภาพ ✈️</div>
@@ -277,7 +308,7 @@ def generate_day9(lang):
 </head>
 <body>
 <div class="container">
-    <div class="lang-switcher"><a href="day9-th.html">TH</a> | <a href="day9-en.html" style="background: #d4af37; color: #252a36 !important;">EN</a> | <a href="day9-ja.html">JP</a></div>
+    <div class="lang-switcher"><a href="day9-th.html">TH</a> | <a href="day9-en.html" style="background: #d4af37; color: #252a36 !important;">EN</a> | <a href="day9-jp.html">JP</a></div>
     <div class="header">🚇 Tokyo Unseen & Mega Sento Speed Trip 2026 🏮</div>
     <div class="day-section">
         <div class="day-title">🗓️ Day 9: Wednesday, August 5, 2026 | Narita Check-out, Terminal Commute & Safe Flight Home ✈️</div>
@@ -305,7 +336,7 @@ def generate_day9(lang):
 </head>
 <body>
 <div class="container">
-    <div class="lang-switcher"><a href="day9-th.html">TH</a> | <a href="day9-en.html">EN</a> | <a href="day9-ja.html" style="background: #d4af37; color: #252a36 !important;">JP</a></div>
+    <div class="lang-switcher"><a href="day9-th.html">TH</a> | <a href="day9-en.html">EN</a> | <a href="day9-jp.html" style="background: #d4af37; color: #252a36 !important;">JP</a></div>
     <div class="header">🚇 Tokyo Unseen & Mega Sento Speed Trip 2026 🏮</div>
     <div class="day-section">
         <div class="day-title">🗓️ Day 9: 2026年8月5日(水) | 成田の宿出発、成田空港への移動＆安全帰国 ✈️</div>
@@ -320,7 +351,7 @@ def generate_day9(lang):
             </table>
         </div>
     </div>
-    <div class="btn-wrapper"><a href="day8-ja.html" class="btn btn-back">← Day 8 へ戻る</a><a href="index.html" class="btn btn-home">日付選択に戻る</a></div>
+    <div class="btn-wrapper"><a href="day8-jp.html" class="btn btn-back">← Day 8 へ戻る</a><a href="index.html" class="btn btn-home">日付選択に戻る</a></div>
 </div>
 </body>
 </html>"""
@@ -328,13 +359,13 @@ def generate_day9(lang):
 langs = ["th", "en", "ja"]
 for day in range(1, 9):
     for lang in langs:
-        filename = f"day{day}-{lang}.html"
+        filename = f"day{day}-{lang if lang!='ja' else 'jp'}.html"
         with open(filename, "w", encoding="utf-8") as f:
             f.write(generate_html(day, lang))
         print(f"Generated: {filename}")
 
 for lang in langs:
-    filename = f"day9-{lang}.html"
+    filename = f"day9-{lang if lang!='ja' else 'jp'}.html"
     with open(filename, "w", encoding="utf-8") as f:
         f.write(generate_day9(lang))
     print(f"Generated: {filename}")
