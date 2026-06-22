@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokyo Unseen, Railway & Mega Sento Trip 2026</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* ==========================================================================
+           ⛩️ MATSURI UPGRADE: สไตล์ย้อมหน้าแรกให้ได้อารมณ์ซุ้มเทศกาล ไม่คลีนจืด
+           ========================================================================== */
+        
+        /* กล่องซุ้มเมนูย้อมสีครีมไม้ไผ่ เสริมขอบคู่หนาให้ดูขลังเหมือนบานประตูเรือนญี่ปุ่น */
+        .matsuri-stall {
+            margin-bottom: 35px;
+            padding: 30px 25px;
+            background: #f7efe2; /* สีไม้ไผ่อุ่น */
+            border-radius: 12px;
+            border: 2px solid #cbbaa4;
+            box-shadow: inset 0 0 15px rgba(186, 74, 0, 0.05), 0 6px 16px rgba(0,0,0,0.06);
+        }
+
+        /* แยกสีป้ายเชือกถักตามเวอร์ชันภาษา */
+        .stall-th { border-top: 6px solid #a62c20; }
+        .stall-en { border-top: 6px solid #2980b9; }
+        .stall-jp { border-top: 6px solid #16a085; }
+
+        .stall-title {
+            font-size: 16px;
+            font-weight: bold;
+            color: #5d4037;
+            margin-bottom: 22px;
+            padding-bottom: 8px;
+            border-bottom: 2px dashed #cbbaa4; /* เส้นประคั่นลายเนื้อไม้ */
+            letter-spacing: 0.5px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        /* จัดวางป้ายไม้เป็นตารางสี่เหลี่ยมแน่นๆ */
+        .grid-tags {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+            gap: 16px;
+        }
+
+        /* 🪵 อัปเกรดป้ายเลือกวันเป็น "ป้ายไม้เอะมะแขวนขอพร" แบบ 3D นูนหนาดูแพง */
+        .wooden-tag {
+            display: block;
+            padding: 16px 12px;
+            background: linear-gradient(to bottom, #ffffff, #fdfaf2);
+            border: 1px solid #ba4a00;
+            border-bottom: 5px solid #8e3200; /* ขอบล่างหนาพิเศษสร้างมิติแผ่นไม้เนื้อแน่น */
+            color: #ba4a00 !important;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+            border-radius: 6px;
+            transition: all 0.15s ease-in-out;
+            box-shadow: 0 4px 8px rgba(186, 74, 0, 0.1);
+        }
+
+        /* เอฟเฟกต์ยกแผ่นไม้ลอยเด่นสไตล์พรีเมียมเวลาเมาส์ชี้ */
+        .wooden-tag:hover {
+            background: linear-gradient(to bottom, #fff6eb, #fbead5);
+            color: #a62c20 !important;
+            border-color: #a62c20;
+            transform: translateY(-3px); /* ลอยสูงขึ้น */
+            box-shadow: 0 8px 16px rgba(166, 44, 32, 0.18);
+            border-bottom: 6px solid #781e15;
+        }
+
+        /* เอฟเฟกต์เมื่อกดนิ้วลงไป: แผ่นไม้จะยุบตัวกระแทกลงไปจริงๆ */
+        .wooden-tag:active {
+            transform: translateY(2px); 
+            border-bottom: 1px solid #781e15;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- หัวข้อใหญ่โคมไฟเทศกาลหน้าร้อนเรืองแสง -->
+    <div class="header">☀️ Tokyo Unseen, Railway & Mega Sento Speed Trip 2026 🏮</div>
+
+    <!-- ==================== ซุ้มภาษาไทย 🇹🇭 ==================== -->
+    <div class="matsuri-stall stall-th">
+        <div class="stall-title">🇹🇭 เมนูภาษาไทย / Thai Version</div>
+        <div class="grid-tags">
+            <a href="day1-th.html" class="wooden-tag">🎋 Day 1 (28 ก.ค.)</a>
+            <a href="day2-th.html" class="wooden-tag">🎋 Day 2 (29 ก.ค.)</a>
+            <a href="day3-th.html" class="wooden-tag">🎋 Day 3 (30 ก.ค.)</a>
+            <a href="day4-th.html" class="wooden-tag">🎋 Day 4 (31 ก.ค.)</a>
+            <a href="day5-th.html" class="wooden-tag">🎋 Day 5 (1 ส.ค.)</a>
+            <a href="day6-th.html" class="wooden-tag">🎋 Day 6 (2 ส.ค.)</a>
+            <a href="day7-th.html" class="wooden-tag">🎋 Day 7 (3 ส.ค.)</a>
+            <a href="day8-th.html" class="wooden-tag">🎋 Day 8 (4 ส.ค.)</a>
+        </div>
+    </div>
+
+    <!-- ==================== ซุ้มภาษาอังกฤษ 🇬🇧 ==================== -->
+    <div class="matsuri-stall stall-en">
+        <div class="stall-title">🇬🇧 English Menu / English Version</div>
+        <div class="grid-tags">
+            <a href="day1-en.html" class="wooden-tag">🎋 Day 1 (Jul 28)</a>
+            <a href="day2-en.html" class="wooden-tag">🎋 Day 2 (Jul 29)</a>
+            <a href="day3-en.html" class="wooden-tag">🎋 Day 3 (Jul 30)</a>
+            <a href="day4-en.html" class="wooden-tag">🎋 Day 4 (Jul 31)</a>
+            <a href="day5-en.html" class="wooden-tag">🎋 Day 5 (Aug 1)</a>
+            <a href="day6-en.html" class="wooden-tag">🎋 Day 6 (Aug 2)</a>
+            <a href="day7-en.html" class="wooden-tag">🎋 Day 7 (Aug 3)</a>
+            <a href="day8-en.html" class="wooden-tag">🎋 Day 8 (Aug 4)</a>
+        </div>
+    </div>
+
+    <!-- ==================== ซุ้มภาษาญี่ปุ่น 🇯🇵 ==================== -->
+    <div class="matsuri-stall stall-jp">
+        <div class="stall-title">🇯🇵 日本語メニュー / Japanese Version</div>
+        <div class="grid-tags">
+            <a href="day1-jp.html" class="wooden-tag">🎋 1日目 (7月28日)</a>
+            <a href="day2-jp.html" class="wooden-tag">🎋 2日目 (7月29日)</a>
+            <a href="day3-jp.html" class="wooden-tag">🎋 3日目 (7月30日)</a>
+            <a href="day4-jp.html" class="wooden-tag">🎋 4日目 (7月31日)</a>
+            <a href="day5-jp.html" class="wooden-tag">🎋 5日目 (8月1日)</a>
+            <a href="day6-jp.html" class="wooden-tag">🎋 6日目 (8月2日)</a>
+            <a href="day7-jp.html" class="wooden-tag">🎋 7日目 (8月3日)</a>
+            <a href="day8-jp.html" class="wooden-tag">🎋 8日目 (8月4日)</a>
+        </div>
+    </div>
+
+    <!-- แถบกระดาษบันทึกไฟลต์บินขากลับสไตล์คลาสสิก -->
+    <div style="margin-top:30px; padding:18px; background-color:#ebdcc7; border: 2px dashed #ba4a00; border-radius: 8px; font-size:13px; text-align: center; color: #5d4037; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.03);">
+        ✈️ Return Flight Info: Aug 5, 2026 | 09:30 AM | VN311 Vietnam Airlines (NRT → HAN → BKK)
+    </div>
+
+</div>
+
+</body>
+</html>
